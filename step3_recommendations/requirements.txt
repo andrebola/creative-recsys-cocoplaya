@@ -1,0 +1,14 @@
+Bottleneck==1.2.1
+certifi==2018.4.16
+chardet==3.0.4
+h5py==2.7.1
+idna==2.6
+joblib==0.11
+lightfm==1.14
+numpy==1.14.0
+requests==2.18.4
+scikit-learn==0.19.1
+scipy==1.1.0
+six==1.11.0
+tqdm==4.23.4
+urllib3==1.22

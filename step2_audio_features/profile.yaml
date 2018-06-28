@@ -1,0 +1,7 @@
+outputFormat: json
+outputFrames: 0
+requireMbid: false
+
+highlevel:
+    compute: 1
+    svm_models: ['tagtraum.history']
