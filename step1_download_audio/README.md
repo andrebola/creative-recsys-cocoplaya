@@ -5,4 +5,4 @@ The first step is to download the audio samples for the songs from Spotify, this
 
 `/audio_folder/08/01EADvpwhTIvFgyDAuC108.mp3`
 
-To download the audio a file with the urls is required, to get this file please contact [Andres Ferraro!] (andres.ferraro@upf.edu). After uncompressing the Json file with the urls of the songs, run the python 3 script `download_audio.py`. The folder where the audio will be downloaded can be specified in the script.
+To download the audio a file with the urls is required, to get this file please contact Andres Ferraro (andres.ferraro at upf.edu). After uncompressing the Json file with the urls of the songs, run the python 3 script `download_audio.py`. The folder where the audio will be downloaded can be specified in the script.
