@@ -23,7 +23,7 @@ def download_item(audio_path, uri, url):
 
 
 if __name__ == '__main__':
-    audio_path = './audio/'
+    audio_path = '../audio/'
     all_urls = json.load(open('./all_dicts.json'))
     for uri, url in all_urls.items():
         download_item(audio_path, uri, url)

@@ -1,14 +1,15 @@
 
 
-# Recsys Challenge 2018
+# Recsys Challenge 2018 - Creative Track
 
 Team: cocoplaya
 
 Members: 
 
-Andres Ferraro
-
-Dmitry Bogdanov
+ - Andres Ferraro
+ - Dmitry Bogdanov
+ - Jason Yoon
+ - Lucas Kim
 
 Username in recsys-challenge.spotify.com: aferraro
 

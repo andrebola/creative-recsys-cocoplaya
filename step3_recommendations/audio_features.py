@@ -3,7 +3,7 @@ import numpy as np
 import json
 import os.path
 
-ESSENTIA_PATH = '/datasets/MTG/projects/spotify-recs/essentia/{}/{}/{}.mp3.json'
+ESSENTIA_PATH = '../essentia/{}/{}/{}.mp3.json'
 
 def get_sample_dict(all_features=True):
     # This is used to train DictVectorizer
