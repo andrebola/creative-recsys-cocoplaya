@@ -2,7 +2,7 @@
 
 # STEP 2:
 
-After downloading all the audio samples from spotify we need to compute the features for each song, this features are extracted using [Essentia](http://essentia.upf.edu/documentation/), an open-source library for audio and music analysis licences under Affero GPL v3.
+After downloading all the audio samples from spotify we need to compute the features for each song, which are extracted using [Essentia](http://essentia.upf.edu/documentation/), an open-source library for audio and music analysis licences under Affero GPL v3.
 
 The [essentia music extractor](http://essentia.upf.edu/documentation/streaming_extractor_music.html) computes low-level and high-level features from the audio, in this case we only use the Tagtraum classifier which gives the probability for each of the following genres: Blues, Country, Electronic, Folk, Jazz, Latin, Metal, Pop, Rap, Reggae, RnB, Rock, World.
 
