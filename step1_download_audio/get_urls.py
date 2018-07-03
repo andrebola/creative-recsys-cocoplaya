@@ -3,8 +3,9 @@ import os
 import json
 import spotipy
 import spotipy.util as util
+import time
 from collections import defaultdict
-from requests.exceptions import HTTPError
+from spotipy.client import SpotifyException
 
 
 def get_all_uris(playlists_path):
@@ -41,13 +42,18 @@ def get_urls(uris, client_id, client_secret):
 
     if token:
         for _iter in tqdm.tqdm(range(num_iter)):
-            sp = spotipy.Spotify(auth=token)
-            ids = ",".join(all_ids[_iter*iter_size:(_iter+1)*iter_size])
-            try:
-                results = sp._get('tracks?ids=%s&market=%s'%(ids, market), limit=iter_size)
-            except HTTPError:
-                token = util.prompt_for_user_token(username, scope,
-                    client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri)
+            results = None
+            while results == None:
+                try:
+                    sp = spotipy.Spotify(auth=token)
+                    ids = ",".join(all_ids[_iter*iter_size:(_iter+1)*iter_size])
+                    results = sp._get('tracks?ids=%s&market=%s'%(ids, market), limit=iter_size)
+                except SpotifyException:
+                    # Refresh token
+                    print ("Refreshing token...")
+                    time.sleep(10)
+                    token = util.prompt_for_user_token(username, scope,
+                        client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri)
             for res in results['tracks']:
                 if res is not None and res['preview_url'] is not None:
                     url = res['preview_url']
