@@ -35,7 +35,7 @@ def get_audio_features_dict(songid, all_features=True):
 
         for k in ["tagtraum"]:
             for f in audio_features["highlevel"][k]["all"]:
-                audio_features_dict["classf_%s_%s" % (k,f)] = audio_features["highlevel"][k]["all"][f]
+                audio_features_dict["class_f_%s_%s" % (k,f)] = audio_features["highlevel"][k]["all"][f]
 
         if all_features:
             # Add MFCC and HPCP
@@ -49,8 +49,8 @@ def get_audio_features_dict(songid, all_features=True):
             """
 
             # Add key and scale
-            audio_features_dict["classf_key"] = audio_features["tonal"]["key_key"]
-            audio_features_dict["classf_scale"] = audio_features["tonal"]["key_scale"]
+            audio_features_dict["class_f_key"] = audio_features["tonal"]["key_key"]
+            audio_features_dict["class_f_scale"] = audio_features["tonal"]["key_scale"]
     return audio_features_dict
 
 
