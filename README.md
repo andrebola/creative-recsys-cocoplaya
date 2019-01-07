@@ -27,3 +27,10 @@ In order to reproduce the recommendations submitted for the Creative track of th
  - **Step 3:** Train Matrix Factorization model and generate recommendations, merge with reccomendations generated from songs co-ocurrence probabilities.
 
  The code to reproduce each step is contained in a separate folder, you can find further instructions inside the folders.
+
+Citations
+-----
+
+For citations you can reference this paper::
+
+Ferraro, A., Bogdanov, D., Yoon, J., Kim, K., & Serra, X. (2018, October). **"Automatic playlist continuation using a hybrid recommender system combining features from text and audio"**. In Proceedings of the ACM Recommender Systems Challenge 2018 (p. 2). ACM.
