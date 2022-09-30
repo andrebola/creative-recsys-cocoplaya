@@ -3,7 +3,7 @@ certifi==2018.4.16
 chardet==3.0.4
 h5py==2.7.1
 idna==2.6
-joblib==0.11
+joblib==1.2.0
 lightfm==1.14
 numpy==1.14.0
 requests==2.18.4
